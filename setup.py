@@ -6,9 +6,9 @@ from pathlib import Path
 root_path = Path(__file__).parent
 
 install_requires = [
-    'nml==0.8.0',
+    'nml==0.0.0',
     'numpy==2.3.4',
-    'Pillow==12.0.0',
+    'Pillow>=12.0.0',
     'typeguard==4.4.4',
     'lark==1.3.0',
 ]
@@ -31,6 +31,6 @@ setup(
         "grf.larkparser": ["*.lark"],
     },
     install_requires=install_requires,
-    python_requires=">=3.12.10",
+    python_requires=">=3.11",
     setup_requires=["setuptools-git-versioning>=2"],
 )
